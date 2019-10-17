@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 var expect = require('chai').expect;
 var request = require('supertest');
 var app = require('../index');

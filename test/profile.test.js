@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 var expect = require('chai').expect;
 var request = require('supertest');
 var app = require('../index');
@@ -31,7 +32,7 @@ describe('GET /profile', function() {
       if (error) {
         done(error);
       } else {
-        agent.saveCookies(res);
+        // agent.saveCookies(res);
 
         agent.get('/profile')
         .expect(200, done);
